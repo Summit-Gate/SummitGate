@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SummitGate</title>
+    <link rel="stylesheet" href="ContactStyle.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SUMMITGATE</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Study.html">Study Planer</a></li>
+                    <li><a href="Resources.html">Resources</a></li>
+                    <li><a href="Tips.html">Tips</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <!-- Background Video -->
+        <video autoplay muted loop id="background-video">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Contact Form Overlay -->
+        <div class="contact-form-overlay">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Please fill out the form below to get in touch.</p>
+
+            <form action="submit-form.php" method="POST" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your name..." required>
+
+                <input type="email" id="email" name="email" placeholder="Your email..." required>
+
+                <input type="text" id="subject" name="subject" placeholder="Subject..." required>
+
+                <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

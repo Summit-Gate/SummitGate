@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner - SummitGate</title>
+    <link rel="stylesheet" href="StudyStyle.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">SUMMITGATE</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Study.html">Study Planner</a></li>
+                    <li><a href="Resources.html">Resources</a></li>
+                    <li><a href="Tips.html">Tips</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <!-- Background Video -->
+        <video autoplay muted loop id="background-video">
+            <source src="study.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Study Planner Form Overlay -->
+        <div class="study-planner-overlay">
+            <h1>Your Study Planner</h1>
+            <p>Plan your study tasks and stay organized.</p>
+
+            <form action="#" method="POST" class="study-form">
+                <input type="text" id="task" name="task" placeholder="Study Task..." required>
+
+                <input type="date" id="deadline" name="deadline" required>
+
+                <select id="priority" name="priority" required>
+                    <option value="" disabled selected>Priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Add Task</button>
+            </form>
+
+            <!-- Optional: A placeholder for where a task list would appear -->
+            <div class="task-list">
+                <h2>Your Tasks</h2>
+                <ul>
+                    <!-- Task items will be listed here -->
+                    <li>Sample Task 1 - Deadline: Oct 20, Priority: High</li>
+                    <li>Sample Task 2 - Deadline: Oct 25, Priority: Medium</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
