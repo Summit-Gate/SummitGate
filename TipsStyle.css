@@ -97,11 +97,12 @@ header {
     margin-bottom: 20px;
 }
 
-/* Tips Grid */
-.tips-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+/* Tips Carousel */
+.tips-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
 }
 
 .tip-card {
@@ -111,11 +112,15 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
-    transition: transform 0.3s;
+    flex: 0 0 100%;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    display: none;
 }
 
-.tip-card:hover {
-    transform: translateY(-5px);
+.tip-card.active {
+    opacity: 1;
+    display: block;
 }
 
 .tip-card h2 {

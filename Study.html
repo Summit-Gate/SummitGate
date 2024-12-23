@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Planner - SummitGate</title>
+    <title>Study Planner</title>
     <link rel="stylesheet" href="StudyStyle.css">
 </head>
 <body>
@@ -23,42 +23,33 @@
     </header>
 
     <section class="hero">
-        <!-- Background Video -->
         <video autoplay muted loop id="background-video">
             <source src="study.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
-        <!-- Study Planner Form Overlay -->
         <div class="study-planner-overlay">
             <h1>Your Study Planner</h1>
             <p>Plan your study tasks and stay organized.</p>
 
-            <form action="#" method="POST" class="study-form">
+            <form id="studyForm" class="study-form">
                 <input type="text" id="task" name="task" placeholder="Study Task..." required>
-
                 <input type="date" id="deadline" name="deadline" required>
-
                 <select id="priority" name="priority" required>
                     <option value="" disabled selected>Priority</option>
                     <option value="High">High</option>
                     <option value="Medium">Medium</option>
                     <option value="Low">Low</option>
                 </select>
-
                 <button type="submit" class="submit-btn">Add Task</button>
             </form>
 
-            <!-- Optional: A placeholder for where a task list would appear -->
             <div class="task-list">
                 <h2>Your Tasks</h2>
-                <ul>
-                    <!-- Task items will be listed here -->
-                    <li>Sample Task 1 - Deadline: Oct 20, Priority: High</li>
-                    <li>Sample Task 2 - Deadline: Oct 25, Priority: Medium</li>
-                </ul>
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
